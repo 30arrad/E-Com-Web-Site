@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Navigation Bar -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">HOMOSAPIEN</h1>
+            <nav>
+                <!-- Responsive Menu Button -->
+                <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <!-- Navigation Links -->
+                <ul id="menu" class="hidden md:flex space-x-6 absolute md:relative bg-white w-full md:w-auto top-16 left-0 md:top-0 md:bg-transparent shadow-md md:shadow-none">
+                    <li><a href="#" class="block py-2 px-4 hover:text-gray-500">Home</a></li>
+                    <li><a href="#" class="block py-2 px-4 hover:text-gray-500">Featured</a></li>
+                    <li><a href="#" class="block py-2 px-4 hover:text-gray-500">Men</a></li>
+                    <li><a href="#" class="block py-2 px-4 hover:text-gray-500">Women</a></li>
+                    <li><a href="#" class="block py-2 px-4 hover:text-gray-500">Kids</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center py-12">
+        <h2 class="text-3xl md:text-4xl font-bold">BEST CLOTHING COLLECTION</h2>
+        <p class="text-gray-500 mt-2 text-sm md:text-base">Discover quality styles and fashion trends for every occasion.</p>
+        <div class="mt-6 space-x-4">
+            <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">T-Shirts</button>
+            <button class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">Jackets</button>
+            <button class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">Pants</button>
+            <button class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">Hoodies</button>
+            <button class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">Shorts</button>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Product Card -->
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <a href="items.html">
+                    <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-40 object-cover rounded">
+                </a>
+                <h3 class="font-bold mt-4">Men's Basic Crew T-Shirt</h3>
+                <p class="text-gray-500 mt-1">$25.00</p>
+                <button class="mt-4 w-full bg-gray-800 text-white py-2 rounded hover:bg-gray-700">Add to cart</button>
+            </div>
+
+            <!-- Duplicate Product Cards -->
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-40 object-cover rounded">
+                <h3 class="font-bold mt-4">Women's Casual Top</h3>
+                <p class="text-gray-500 mt-1">$30.00</p>
+                <button class="mt-4 w-full bg-gray-800 text-white py-2 rounded hover:bg-gray-700">Add to cart</button>
+            </div>
+
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-40 object-cover rounded">
+                <h3 class="font-bold mt-4">Unisex Sports T-Shirt</h3>
+                <p class="text-gray-500 mt-1">$22.00</p>
+                <button class="mt-4 w-full bg-gray-800 text-white py-2 rounded hover:bg-gray-700">Add to cart</button>
+            </div>
+
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-40 object-cover rounded">
+                <h3 class="font-bold mt-4">Long Sleeve Tee</h3>
+                <p class="text-gray-500 mt-1">$28.00</p>
+                <button class="mt-4 w-full bg-gray-800 text-white py-2 rounded hover:bg-gray-700">Add to cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12 py-8">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="font-bold mb-4">Contact Us</h3>
+                <p>Email: arradahmed30@gmail.com</p>
+                <p>Phone: 01891974298</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Company</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email" class="w-full p-2 rounded text-black">
+                    <button class="mt-2 w-full bg-gray-700 py-2 rounded hover:bg-gray-600">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

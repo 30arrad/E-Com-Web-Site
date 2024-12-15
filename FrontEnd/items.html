@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Navigation Bar -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">HOMOSAPIEN</h1>
+            <nav>
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <!-- Navigation Links -->
+                <ul id="menu" class="hidden md:flex space-x-6 absolute md:relative bg-white w-full md:w-auto md:bg-transparent top-16 left-0 shadow-md md:shadow-none md:top-0">
+                    <li><a href="#" class="block py-2 px-4 md:inline hover:text-gray-500">Home</a></li>
+                    <li><a href="#" class="block py-2 px-4 md:inline hover:text-gray-500">Featured</a></li>
+                    <li><a href="#" class="block py-2 px-4 md:inline hover:text-gray-500">New</a></li>
+                    <li><a href="#" class="block py-2 px-4 md:inline hover:text-gray-500">Accessories</a></li>
+                    <li><a href="#" class="block py-2 px-4 md:inline hover:text-gray-500">T-Shirt</a></li>
+                    <li><a href="#" class="block py-2 px-4 md:inline hover:text-gray-500">Men</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <section class="container mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Product Images -->
+        <div>
+            <img src="https://via.placeholder.com/600x600" alt="Product Image" class="w-full rounded-lg shadow-md">
+            <div class="flex space-x-4 mt-4">
+                <img src="https://via.placeholder.com/100" alt="Thumbnail 1" class="w-24 h-24 object-cover rounded-md shadow">
+                <img src="https://via.placeholder.com/100" alt="Thumbnail 2" class="w-24 h-24 object-cover rounded-md shadow">
+                <img src="https://via.placeholder.com/100" alt="Thumbnail 3" class="w-24 h-24 object-cover rounded-md shadow">
+                <img src="https://via.placeholder.com/100" alt="Thumbnail 4" class="w-24 h-24 object-cover rounded-md shadow">
+            </div>
+        </div>
+
+        <!-- Product Details -->
+        <div>
+            <h2 class="text-3xl font-bold mb-4">Adult Ultra Cotton T-Shirt, Style G2000, Multipack</h2>
+            <div class="flex items-center space-x-4 mb-4">
+                <p class="text-2xl font-semibold text-gray-700">$34.00</p>
+                <p class="text-gray-400 line-through">$37.40</p>
+                <span class="text-green-600 font-semibold">In Stock</span>
+            </div>
+            <p class="text-gray-600 mb-6">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Be unique. Ultra-perfect cotton 
+                dual medium, quick fit blend for comfort and long-lasting quality.
+            </p>
+            <button class="w-full bg-gray-800 text-white py-3 rounded-lg hover:bg-gray-700">Add to cart</button>
+
+            <ul class="mt-6 space-y-2">
+                <li><a href="#" class="text-gray-600 underline hover:text-gray-800">Compare costs</a></li>
+                <li><a href="#" class="text-gray-600 underline hover:text-gray-800">Ask a question</a></li>
+                <li><a href="#" class="text-gray-600 underline hover:text-gray-800">Delivery & Return</a></li>
+                <li><a href="#" class="text-gray-600 underline hover:text-gray-800">Share</a></li>
+            </ul>
+
+            <!-- Additional Features -->
+            <div class="mt-6 grid grid-cols-2 gap-4">
+                <div class="p-4 border rounded-lg">
+                    <h4 class="font-semibold mb-2">Free Shipping</h4>
+                    <p class="text-sm text-gray-500">Fast shipping on orders above $30</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h4 class="font-semibold mb-2">Flexible Payment</h4>
+                    <p class="text-sm text-gray-500">Pay with multiple credit cards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="font-bold mb-4">Visit Us</h3>
+                <p>New Orleans, USA</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Call Us</h3>
+                <p>01891974298</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Working Hours</h3>
+                <p>Mon-Sat 8:00 AM - 7:00 PM</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Email Us</h3>
+                <p>arradahmed30@gmail.com</p>
+            </div>
+        </div>
+        <hr class="my-8 border-gray-700">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Tulos. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
