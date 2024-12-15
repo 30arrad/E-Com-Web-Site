@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Collection</title>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS CDN -->
+</head>
+<body class="bg-gray-100">
+
+  <div class="max-w-7xl mx-auto p-6">
+    <!-- Filter Section -->
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-3xl font-semibold text-gray-800">Product Collection</h1>
+      <div class="space-x-4">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="filterProducts('electronics')">Electronics</button>
+        <button class="bg-green-500 text-white px-4 py-2 rounded" onclick="filterProducts('clothing')">Clothing</button>
+        <button class="bg-red-500 text-white px-4 py-2 rounded" onclick="filterProducts('')">Show All</button>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Product 1 -->
+      <div class="product-item electronics bg-white p-4 rounded shadow-lg">
+        <img src="https://via.placeholder.com/200" alt="Product 1" class="w-full h-48 object-cover rounded mb-4">
+        <h3 class="text-lg font-semibold">Product 1</h3>
+        <p class="text-gray-600">Category: Electronics</p>
+        <p class="text-xl font-bold text-gray-800">$499.99</p>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-item clothing bg-white p-4 rounded shadow-lg">
+        <img src="https://via.placeholder.com/200" alt="Product 2" class="w-full h-48 object-cover rounded mb-4">
+        <h3 class="text-lg font-semibold">Product 2</h3>
+        <p class="text-gray-600">Category: Clothing</p>
+        <p class="text-xl font-bold text-gray-800">$29.99</p>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-item electronics bg-white p-4 rounded shadow-lg">
+        <img src="https://via.placeholder.com/200" alt="Product 3" class="w-full h-48 object-cover rounded mb-4">
+        <h3 class="text-lg font-semibold">Product 3</h3>
+        <p class="text-gray-600">Category: Electronics</p>
+        <p class="text-xl font-bold text-gray-800">$199.99</p>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-item clothing bg-white p-4 rounded shadow-lg">
+        <img src="https://via.placeholder.com/200" alt="Product 4" class="w-full h-48 object-cover rounded mb-4">
+        <h3 class="text-lg font-semibold">Product 4</h3>
+        <p class="text-gray-600">Category: Clothing</p>
+        <p class="text-xl font-bold text-gray-800">$59.99</p>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-item electronics bg-white p-4 rounded shadow-lg">
+        <img src="https://via.placeholder.com/200" alt="Product 5" class="w-full h-48 object-cover rounded mb-4">
+        <h3 class="text-lg font-semibold">Product 5</h3>
+        <p class="text-gray-600">Category: Electronics</p>
+        <p class="text-xl font-bold text-gray-800">$299.99</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function filterProducts(category) {
+      const productItems = document.querySelectorAll('.product-item');
+      
+      productItems.forEach(item => {
+        if (category === '' || item.classList.contains(category)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
