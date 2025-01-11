@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -45,7 +45,7 @@
 
 <div class="dropdown">
   <button onclick="toggleDropdown()">Dropdown</button>
-  <div id="dropdownMenu" class="dropdown-content">
+  <div id="dropdownMenu" class="dropdown-content"> userDropdownButton1
     <a href="#">Option 1</a>
     <a href="#">Option 2</a>
     <a href="#">Option 3</a>
@@ -73,14 +73,14 @@
 </script>
 
 </body>
-</html> -->
+</html>
 
 
 
 <!-- Two***************************************************************************-->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -90,4 +90,97 @@
 <body>
     <script src="DropDown.js"></script>
 </body>
-</html>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Cart Dropdown -->
+<div class="relative inline-block text-left">
+  <button id="myCartDropdownButton1" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+      <svg class="w-5 h-5 lg:me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+        </svg>
+      My Cart
+  </button>
+  <div id="myCartDropdown1" class="hidden absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+      <div class="py-1">
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700">Item 1</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700">Item 2</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700">Item 3</a>
+      </div>
+  </div>
+</div>
+
+<!-- User Account Dropdown -->
+<div class="relative inline-block text-left">
+  <button id="userDropdownButton1" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+
+      <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+        </svg>
+      Account
+  </button>
+  <div id="userDropdown1" class="hidden absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+      <div class="py-1">
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700">Profile</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700">Orders</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700">Log out</a>
+      </div>
+  </div>
+</div>
+
+
+
+<script>
+  // Cart dropdown toggle
+  const cartDropdownButton = document.getElementById('myCartDropdownButton1');
+  const cartDropdown = document.getElementById('myCartDropdown1');
+  
+  cartDropdownButton.addEventListener('click', () => {
+      cartDropdown.classList.toggle('hidden');
+  });
+
+  // User account dropdown toggle
+  const userDropdownButton = document.getElementById('userDropdownButton1');
+  const userDropdown = document.getElementById('userDropdown1');
+  
+  userDropdownButton.addEventListener('click', () => {
+      userDropdown.classList.toggle('hidden');
+  });
+
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', (e) => {
+      if (!cartDropdownButton.contains(e.target) && !cartDropdown.contains(e.target)) {
+          cartDropdown.classList.add('hidden');
+      }
+      if (!userDropdownButton.contains(e.target) && !userDropdown.contains(e.target)) {
+          userDropdown.classList.add('hidden');
+      }
+  });
+</script>

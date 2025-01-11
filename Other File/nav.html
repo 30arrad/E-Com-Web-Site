@@ -266,11 +266,44 @@
       </div>
   </footer>
 </body>
+
+
 <script>
-  document.querySelector('[data-collapse-toggle="ecommerce-navbar-menu-1"]').addEventListener('click', function () {
+
+document.querySelector('[data-collapse-toggle="ecommerce-navbar-menu-1"]').addEventListener('click', function () {
     const menu = document.getElementById('ecommerce-navbar-menu-1');
     menu.classList.toggle('hidden');
   });
+
+
+  // Cart dropdown toggle
+  const cartDropdownButton = document.getElementById('myCartDropdownButton1');
+  const cartDropdown = document.getElementById('myCartDropdown1');
+  
+  cartDropdownButton.addEventListener('click', () => {
+      cartDropdown.classList.toggle('hidden');
+  });
+
+  // User account dropdown toggle
+  const userDropdownButton = document.getElementById('userDropdownButton1');
+  const userDropdown = document.getElementById('userDropdown1');
+  
+  userDropdownButton.addEventListener('click', () => {
+      userDropdown.classList.toggle('hidden');
+  });
+
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', (e) => {
+      if (!cartDropdownButton.contains(e.target) && !cartDropdown.contains(e.target)) {
+          cartDropdown.classList.add('hidden');
+      }
+      if (!userDropdownButton.contains(e.target) && !userDropdown.contains(e.target)) {
+          userDropdown.classList.add('hidden');
+      }
+  });
 </script>
+
+
+
 
 </html>

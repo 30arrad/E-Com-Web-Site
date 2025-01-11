@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-white dark:bg-gray-800 antialiased block">
+        <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0 py-4">
+          <div class="flex items-center justify-between">
+      
+            <div class="flex items-center space-x-8">
+              <div class="shrink-0">
+                <a href="#" title="" class="text-purple-600">
+                  HOMO SAPIEN
+                </a>
+              </div>
+      
+              <ul class="hidden lg:flex items-center justify-start gap-6 md:gap-8 py-3 sm:justify-center">
+                <li>
+                  <a href="#" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+                    Home
+                  </a>
+                </li>
+                <li class="shrink-0">
+                  <a href="#" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+                    Best Sellers
+                  </a>
+                </li>
+                <li class="shrink-0">
+                  <a href="#" title="" class="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+                    Gift Ideas
+                  </a>
+                </li>
+                <li class="shrink-0">
+                  <a href="#" title="" class="text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+                    Today's Deals
+                  </a>
+                </li>
+                <li class="shrink-0">
+                  <a href="#" title="" class="text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500">
+                    Sell
+                  </a>
+                </li>
+              </ul>
+            </div>
+      
+<!-- Cart Dropdown -->
+<div class="relative inline-block text-left">
+  <button id="myCartDropdownButton1" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+      <svg class="w-5 h-5 lg:me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+        </svg>
+      My Cart
+  </button>
+  <div id="myCartDropdown1" class="hidden absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+      <div class="py-1">
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700">Item 1</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700">Item 2</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700">Item 3</a>
+      </div>
+  </div>
+</div>
+
+<!-- User Account Dropdown -->
+<div class="relative inline-block text-left">
+  <button id="userDropdownButton1" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+
+      <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+        </svg>
+      Account
+  </button>
+  <button type="button" data-collapse-toggle="ecommerce-navbar-menu-1" aria-controls="ecommerce-navbar-menu-1" aria-expanded="false" class="inline-flex lg:hidden items-center justify-center hover:bg-gray-100 rounded-md dark:hover:bg-gray-700 p-2 text-gray-900 dark:text-white">
+    <span class="sr-only">
+      Open Menu
+    </span>
+    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+    </svg>                
+  </button>
+</div>
+          </div>
+      
+          <div id="ecommerce-navbar-menu-1" class="bg-gray-50 dark:bg-gray-700 dark:border-gray-600 border border-gray-200 rounded-lg py-3 hidden px-4 mt-4">
+            <ul class="text-gray-900 dark:text-white text-sm font-medium dark:text-white space-y-3">
+              <li>
+                <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Home</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Best Sellers</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Gift Ideas</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Games</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Electronics</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary-700 dark:hover:text-primary-500">Home & Garden</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white mt-12 py-8">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+              <h3 class="font-bold mb-4">Contact Us</h3>
+              <p>Email: arradahmed30@gmail.com</p>
+              <p>Phone: 01891974298</p>
+          </div>
+          <div>
+              <h3 class="font-bold mb-4">Company</h3>
+              <ul>
+                  <li><a href="#" class="hover:underline">About</a></li>
+                  <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                  <li><a href="#" class="hover:underline">Terms of Service</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="font-bold mb-4">Newsletter</h3>
+              <form>
+                  <input type="email" placeholder="Enter your email" class="w-full p-2 rounded text-black">
+                  <button class="mt-2 w-full bg-gray-700 py-2 rounded hover:bg-gray-600">Subscribe</button>
+              </form>
+          </div>
+      </div>
+  </footer>
+</body>
+
+
+<script>
+
+document.querySelector('[data-collapse-toggle="ecommerce-navbar-menu-1"]').addEventListener('click', function () {
+    const menu = document.getElementById('ecommerce-navbar-menu-1');
+    menu.classList.toggle('hidden');
+  });
+
+
+  // Cart dropdown toggle
+  const cartDropdownButton = document.getElementById('myCartDropdownButton1');
+  const cartDropdown = document.getElementById('myCartDropdown1');
+  
+  cartDropdownButton.addEventListener('click', () => {
+      cartDropdown.classList.toggle('hidden');
+  });
+
+  // User account dropdown toggle
+  const userDropdownButton = document.getElementById('userDropdownButton1');
+  const userDropdown = document.getElementById('userDropdown1');
+  
+  userDropdownButton.addEventListener('click', () => {
+      userDropdown.classList.toggle('hidden');
+  });
+
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', (e) => {
+      if (!cartDropdownButton.contains(e.target) && !cartDropdown.contains(e.target)) {
+          cartDropdown.classList.add('hidden');
+      }
+      if (!userDropdownButton.contains(e.target) && !userDropdown.contains(e.target)) {
+          userDropdown.classList.add('hidden');
+      }
+  });
+
+
+  
+</script>
+
+
+
+
+</html>
