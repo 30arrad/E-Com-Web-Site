@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMO SAPIEN Jackets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo and Branding -->
+                <div class="flex items-center">
+                    <a href="Home.html" class="text-2xl font-bold">HOMO SAPIEN</a>
+                </div>
+
+                <!-- Menu Items -->
+                <div class="hidden md:flex space-x-4">
+                    <a href="Home.html" class="hover:text-gray-300">Home</a>
+                    <a href="#" class="hover:text-gray-300">Best Sellers</a>
+                    <a href="#" class="hover:text-gray-300">Gift Ideas</a>
+                    <a href="#" class="hover:text-gray-300">Today's Deals</a>
+                    <a href="#" class="hover:text-gray-300">Sell</a>
+                </div>
+
+                <!-- Right Section -->
+                <div class="flex items-center space-x-4">
+                    <!-- My Cart Dropdown -->
+                    <div class="relative">
+                        <button id="myCartDropdownButton1" class="hover:text-gray-300 flex">
+                        <svg class="w-5 h-5 lg:me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                        </svg>
+                            My Cart
+                        </button>
+                        <div id="myCartDropdown1" class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg hidden">
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-200">View Cart</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Wishlist</a>
+                        </div>
+                    </div>
+
+                    <!-- Account Dropdown -->
+                    <div class="relative">
+                        <button id="userDropdownButton1" class="hover:text-gray-300 flex">
+                            <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                              </svg> 
+                            Account
+                        </button>
+                        <div id="userDropdown1" class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg hidden">
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Profile</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Orders</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Logout</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button data-collapse-toggle="ecommerce-navbar-menu-1" class="hover:text-gray-300 ">
+                        ☰
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="ecommerce-navbar-menu-1" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="Home.html" class="block hover:bg-gray-700 rounded-lg px-3 py-2">Home</a>
+                <a href="#" class="block hover:bg-gray-700 rounded-lg px-3 py-2">Best Sellers</a>
+                <a href="#" class="block hover:bg-gray-700 rounded-lg px-3 py-2">Gift Ideas</a>
+                <a href="#" class="block hover:bg-gray-700 rounded-lg px-3 py-2">Today's Deals</a>
+                <a href="#" class="block hover:bg-gray-700 rounded-lg px-3 py-2">Sell</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-4 sm:p-6">
+      <table class="w-full border-collapse text-xs sm:text-sm md:text-base">
+        <thead class="hidden sm:table-header-group">
+          <tr>
+            <th class="text-left py-2 border-b">Product</th>
+            <th class="text-left py-2 border-b">Unit Price</th>
+            <th class="text-left py-2 border-b">Size</th>
+            <th class="text-left py-2 border-b">Quantity</th>
+            <th class="text-left py-2 border-b">Subtotal</th>
+            <th class="text-left py-2 border-b">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- First Product -->
+          <tr class="border-b">
+            <td class="py-4 flex items-center">
+              <img src="Images/Hoodies/H-1.jpg" alt="Product Image" class="w-12 h-12 rounded md:w-16 md:h-16">
+              <div class="ml-4">
+                <span class="block">Premium Heavy Rib Fabric Polo - Arctic</span>
+                <div class="sm:hidden mt-2">
+                  <span class="block text-gray-500 text-xs">Unit Price: <span class="line-through text-gray-400">৳1700</span> <span class="text-blue-600 font-semibold">৳1390</span></span>
+                  <span class="block text-gray-500 text-xs">Size: Premium XL</span>
+                  <span class="block text-gray-500 text-xs">Quantity:</span>
+                  <input type="number" value="1" class="w-16 border text-center rounded-lg mt-1">
+                  <span class="block text-gray-500 text-xs mt-1">Subtotal: <span class="font-semibold">৳1390</span></span>
+                  <div class="mt-2 flex gap-2">
+
+                    <button class="bg-red-500 text-white px-2 py-1 rounded-lg text-xs">Delete</button>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+              <span class="line-through text-gray-400 text-xs md:text-sm">৳1700</span>
+              <span class="text-blue-600 font-semibold">৳1390</span>
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+              <span>Premium XL</span>
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+              <input type="number" value="1" class="w-12 border text-center rounded-lg">
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+              <span class="font-semibold">৳1390</span>
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+
+              <button class="bg-red-500 text-white px-4 py-2 rounded-lg">Delete</button>
+            </td>
+          </tr>
+  
+          <!-- Second Product -->
+          <tr class="border-b bg-gray-50">
+            <td class="py-4 flex items-center">
+              <img src="Images/Jackets/J-1.jpg" alt="Product Image" class="w-12 h-12 rounded md:w-16 md:h-16">
+              <div class="ml-4">
+                <span class="block">Mens Premium T-Shirt - Hope</span>
+                <div class="sm:hidden mt-2">
+                  <span class="block text-gray-500 text-xs">Unit Price: <span class="line-through text-gray-400">৳710</span> <span class="text-blue-600 font-semibold">৳630</span></span>
+                  <span class="block text-gray-500 text-xs">Size: Premium M</span>
+                  <span class="block text-gray-500 text-xs">Quantity:</span>
+                  <input type="number" value="1" class="w-16 border text-center rounded-lg mt-1">
+                  <span class="block text-gray-500 text-xs mt-1">Subtotal: <span class="font-semibold">৳630</span></span>
+                  <div class="mt-2 flex gap-2">
+
+                    <button class="bg-red-500 text-white px-2 py-1 rounded-lg text-xs">Delete</button>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+              <span class="line-through text-gray-400 text-xs md:text-sm">৳710</span>
+              <span class="text-blue-600 font-semibold">৳630</span>
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+              <span>Premium M</span>
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+              <input type="number" value="1" class="w-12 border text-center rounded-lg">
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+              <span class="font-semibold">৳630</span>
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+
+              <button class="bg-red-500 text-white px-4 py-2 rounded-lg">Delete</button>
+            </td>
+          </tr>
+  
+          <!-- Third Product -->
+          <tr class="border-b">
+            <td class="py-4 flex items-center">
+              <img src="Images/Pants/p-1.jpg" alt="Product Image" class="w-12 h-12 rounded md:w-16 md:h-16">
+              <div class="ml-4">
+                <span class="block">Mens Premium Blank Full Sleeve T-Shirt - Black</span>
+                <div class="sm:hidden mt-2">
+                  <span class="block text-gray-500 text-xs">Unit Price: <span class="line-through text-gray-400">৳685</span> <span class="text-blue-600 font-semibold">৳595</span></span>
+                  <span class="block text-gray-500 text-xs">Size: Premium M</span>
+                  <span class="block text-gray-500 text-xs">Quantity:</span>
+                  <input type="number" value="1" class="w-16 border text-center rounded-lg mt-1">
+                  <span class="block text-gray-500 text-xs mt-1">Subtotal: <span class="font-semibold">৳595</span></span>
+                  <div class="mt-2 flex gap-2">
+
+                    <button class="bg-red-500 text-white px-2 py-1 rounded-lg text-xs">Delete</button>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+              <span class="line-through text-gray-400 text-xs md:text-sm">৳685</span>
+              <span class="text-blue-600 font-semibold">৳595</span>
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+              <span>Premium M</span>
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+              <input type="number" value="1" class="w-12 border text-center rounded-lg">
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+              <span class="font-semibold">৳595</span>
+            </td>
+            <td class="py-4 hidden sm:table-cell">
+
+              <button class="bg-red-500 text-white px-4 py-2 rounded-lg">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <!-- Total Amount -->
+      <div class="flex flex-wrap justify-between items-center mt-6">
+        <span class="text-lg sm:text-xl font-bold">Total Amount (৳): <span class="text-green-600">2615</span></span>
+      </div>
+  
+      <!-- Buttons -->
+      <div class="flex flex-wrap justify-between items-center mt-4 gap-4">
+        <button class="bg-green-500 text-white px-4 py-2 rounded-lg text-sm sm:text-lg">Place Order</button>
+        <a href="Home.html">
+          <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg text-sm sm:text-lg">Continue Shopping</button>
+        </a>
+        
+      </div>
+    </div>
+
+
+      <!-- Footer -->
+<footer class="bg-gray-800 text-white mt-12 py-8">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+            <h3 class="font-bold mb-4">Contact Us</h3>
+            <p>Email: arradahmed30@gmail.com</p>
+            <p>Phone: 01891974298</p>
+        </div>
+        <div>
+            <h3 class="font-bold mb-4">Company</h3>
+            <ul>
+                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                <li><a href="#" class="hover:underline">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-bold mb-4">Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Enter your email" class="w-full p-2 rounded text-black">
+                <button class="mt-2 w-full bg-gray-700 py-2 rounded hover:bg-gray-600">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('[data-collapse-toggle="ecommerce-navbar-menu-1"]').addEventListener('click', function () {
+            const menu = document.getElementById('ecommerce-navbar-menu-1');
+            menu.classList.toggle('hidden');
+        });
+
+        // Dropdown toggle logic
+        const toggleDropdown = (button, menu) => {
+            button.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        };
+
+        const cartDropdownButton = document.getElementById('myCartDropdownButton1');
+        const cartDropdown = document.getElementById('myCartDropdown1');
+        const userDropdownButton = document.getElementById('userDropdownButton1');
+        const userDropdown = document.getElementById('userDropdown1');
+
+        toggleDropdown(cartDropdownButton, cartDropdown);
+        toggleDropdown(userDropdownButton, userDropdown);
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!cartDropdownButton.contains(e.target) && !cartDropdown.contains(e.target)) {
+                cartDropdown.classList.add('hidden');
+            }
+            if (!userDropdownButton.contains(e.target) && !userDropdown.contains(e.target)) {
+                userDropdown.classList.add('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
