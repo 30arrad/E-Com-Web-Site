@@ -12,7 +12,7 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Logo and Branding -->
                 <div class="flex items-center">
-                    <a href="#" class="text-2xl font-bold">HOMO SAPIEN</a>
+                    <a href="Home.html" class="text-2xl font-bold">HOMO SAPIEN</a>
                 </div>
 
                 <!-- Menu Items -->
@@ -77,7 +77,103 @@
         </div>
     </nav>
 
+    <div class="container mx-auto py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Section -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4">Checkout Info</h2>
+                
+                <!-- Contact Info -->
+                <h3 class="text-lg font-semibold mb-2">Contact Info</h3>
+                <div class="space-y-4">
+                    <input type="text" placeholder="Full Name" class="w-full p-2 border border-gray-300 rounded">
+                    <input type="email" placeholder="Email" class="w-full p-2 border border-gray-300 rounded">
+                    <input type="tel" placeholder="Phone Number" class="w-full p-2 border border-gray-300 rounded">
+                </div>
 
+                <!-- Shipping Info -->
+                <h3 class="text-lg font-semibold mt-6 mb-2">Shipping Info</h3>
+                <div class="space-y-4">
+                    <input type="text" placeholder="Detailed Address" class="w-full p-2 border border-gray-300 rounded">
+                    <select class="w-full p-2 border border-gray-300 rounded">
+                        <option>Select City</option>
+                        <option>City A</option>
+                        <option>City B</option>
+                    </select>
+                    <input type="text" placeholder="Note for FabriLife (optional)" class="w-full p-2 border border-gray-300 rounded">
+                </div>
+
+                <!-- Summary -->
+                <div class="mt-6 bg-gray-100 p-4 rounded">
+                    <h3 class="text-xl font-semibold text-green-500">Your total payable amount is <span id="totalAmount">₦585</span></h3>
+                    <table class="w-full mt-4 text-sm">
+                        <tr>
+                            <td class="font-bold">Purpose</td>
+                            <td class="text-right font-bold">Amount</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td class="text-right">585</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping</td>
+                            <td class="text-right">0</td>
+                        </tr>
+                    </table>
+                    <p class="mt-4 text-sm text-gray-500">You will get the delivery <span class="font-bold">within 2-3 days</span> after confirmation.</p>
+                </div>
+                
+                <!-- Payment Options -->
+                <h3 class="text-lg font-semibold mt-6">Payment Options</h3>
+                <div class="flex space-x-4 mt-4">
+                    <img src="#" alt="Cash on Delivery" class="w-16 h-10">
+                    <img src="#" alt="Visa" class="w-16 h-10">
+                    <img src="#g" alt="MasterCard" class="w-16 h-10">
+                    <img src="#" alt="Bkash" class="w-16 h-10">
+                </div>
+
+                <!-- Coupon Code -->
+                <div class="mt-6">
+                    <h3 class="text-lg font-semibold mb-2">Got any Coupon Code?</h3>
+                    <div class="flex space-x-2">
+                        <input id="couponCode" type="text" placeholder="Enter Coupon Code Here" class="w-full p-2 border border-gray-300 rounded">
+                        <button onclick="applyCoupon()" class="bg-blue-500 text-white px-4 py-2 rounded">Add Coupon</button>
+                    </div>
+                </div>
+
+                <!-- Terms and Confirm -->
+                <div class="mt-6">
+                    <label class="inline-flex items-center space-x-2">
+                        <input type="checkbox" class="form-checkbox">
+                        <span>I agree to <a href="#" class="text-blue-500">Terms & Conditions</a>, <a href="#" class="text-blue-500">Refund Policy</a>, and <a href="#" class="text-blue-500">Privacy Policy</a>.</span>
+                    </label>
+                </div>
+                <button class="mt-6 w-full bg-green-500 text-white py-2 rounded-lg font-bold">Confirm Order</button>
+            </div>
+
+            <!-- Right Section -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4">Cart Overview</h2>
+                <div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="Images/Hoodies/H-1.jpg" alt="Product" class="w-16 h-16 rounded">
+                            <div class="ml-4">
+                                <p class="font-semibold">Vero Premium Shirt - Blue</p>
+                                <p class="text-sm text-gray-500">1 x 585</p>
+                            </div>
+                        </div>
+                        <p class="font-bold">585</p>
+                    </div>
+                    <div class="mt-4 border-t pt-4 text-right">
+                        <p class="font-semibold">Total: 585</p>
+                        <p class="font-semibold">Shipping: 0</p>
+                        <p class="font-bold text-lg mt-2">Payable: 585</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
