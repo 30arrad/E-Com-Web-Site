@@ -50,7 +50,7 @@
                         </button>
                         <div id="userDropdown1" class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg hidden">
                             <a href="#" class="block px-4 py-2 hover:bg-gray-200">Profile</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Orders</a>
+                            <a href="Order.html" class="block px-4 py-2 hover:bg-gray-200">Orders</a>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-200">Logout</a>
                         </div>
                     </div>
@@ -77,13 +77,18 @@
         </div>
     </nav>
 
-
+    <br>
+    <div class="banner_container">
+        <img class="banner_image" src="Images/banner.png" alt="Main Banner">
+    </div>
 
 <!-- Hero Section -->
 <section class="text-center py-12">
                 <h2 class="text-3xl md:text-4xl font-bold">BEST CLOTHING COLLECTION</h2>
                 <p class="text-gray-500 mt-2 text-sm md:text-base">Discover quality styles and fashion trends for every occasion.</p>
-                <div class="mt-6 space-x-4">
+
+                <br>
+
                   <a href="T-Shirts.html">
                     <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">T-Shirts</button>
                   </a>
@@ -104,69 +109,44 @@
                     <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Shirts</button>
                   </a>
                   
-                </div>
+                </div> 
 </section>
           
-<!-- Product Grid -->
+
 <section class="container mx-auto px-4 py-12">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                    <!-- Product Card -->
-                    <div class="bg-white p-4 shadow-md rounded-lg">
-                        <a href="#">
-                            <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-40 object-cover rounded">
-                        </a>
-                        <h3 class="font-bold mt-4">Men's Basic Crew T-Shirt</h3>
-                        <p class="text-gray-500 mt-1">$25.00</p>
-                        <button class="mt-4 w-full bg-gray-800 text-white py-2 rounded hover:bg-gray-700">Add to cart</button>
-                    </div>
+    <div id="items-Hoodies" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"></div>
+
+      <!-- Modal -->
+      <div 
+      id="modal" 
+      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+      <div class="bg-white rounded-lg shadow-lg w-96">
+        <!-- Modal Header -->
+        <div class=" bg-gray-800 text-white flex justify-between items-center border-b px-4 py-2">
+          <h2 class="text-lg font-bold">Price Details</h2>
+          <button id="closeModalBtn" class="text-gray-600 hover:text-gray-900">×</button>
+        </div>
+    
+        <!-- Modal Body -->
+        <div class="p-4 ">
+          <!-- Product Details -->
+          <div class="flex items-center space-x-4">
+            
+            
+          </div>
           
-                    <!-- Duplicate Product Cards -->
-                    <div class="bg-white p-4 shadow-md rounded-lg">
-                        <a href="">
-                          <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-40 object-cover rounded">
-                        </a>
-                        <h3 class="font-bold mt-4">Women's Casual Top</h3>
-                        <p class="text-gray-500 mt-1">$30.00</p>
-                        <button class="mt-4 w-full bg-gray-800 text-white py-2 rounded hover:bg-gray-700">Add to cart</button>
-                    </div>
-          
-                    <div class="bg-white p-4 shadow-md rounded-lg">
-                        <a href="">
-                          <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-40 object-cover rounded">
-                        </a>
-                        <h3 class="font-bold mt-4">Unisex Sports T-Shirt</h3>
-                        <p class="text-gray-500 mt-1">$22.00</p>
-                        <button class="mt-4 w-full bg-gray-800 text-white py-2 rounded hover:bg-gray-700">Add to cart</button>
-                    </div>
-          
-                    <div class="bg-white p-4 shadow-md rounded-lg">
-                        <a href="">
-                          <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-40 object-cover rounded">
-                        </a>
-                        <h3 class="font-bold mt-4">Long Sleeve Tee</h3>
-                        <p class="text-gray-500 mt-1">$28.00</p>
-                        <button class="mt-4 w-full bg-gray-800 text-white py-2 rounded hover:bg-gray-700">Add to cart</button>
-                    </div>
-          
-                    <div class="bg-white p-4 shadow-md rounded-lg">
-                      <a href="">
-                          <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-40 object-cover rounded">
-                      </a>
-                      <h3 class="font-bold mt-4">Women's Casual Top</h3>
-                      <p class="text-gray-500 mt-1">$30.00</p>
-                      <button class="mt-4 w-full bg-gray-800 text-white py-2 rounded hover:bg-gray-700">Add to cart</button>
-                  </div>
-          
-                  <div class="bg-white p-4 shadow-md rounded-lg">
-                    <a href="">
-                      <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-40 object-cover rounded">
-                    </a>
-                    <h3 class="font-bold mt-4">Women's Casual Top</h3>
-                    <p class="text-gray-500 mt-1">$30.00</p>
-                    <button class="mt-4 w-full bg-gray-800 text-white py-2 rounded hover:bg-gray-700">Add to cart</button>
-                </div>
-          
+        </div>
 </section>
+
+
+<section  class="text-center py-12">
+    <h1 class="text-3xl md:text-4xl font-bold"> Because comfort and confidence go hand in hand. </h1> 
+        <P class="text-gray-500 mt-2 text-sm md:text-base" >
+            We focus on carefully selecting the best clothing that is comfortable, looks great, and makes you confident. Apart from the fabric, design and fit, we go through strict quality control parameters to give you what you truly deserve. The power of a good outfit is how it can influence your perception of yourself.
+        </P>
+</section>
+
+
 
 
       <!-- Footer -->
@@ -227,5 +207,8 @@
             }
         });
     </script>
+
+    <script src="database/DataHoodies.js"></script>
+    <script src="Index.js"></script>
 </body>
 </html>

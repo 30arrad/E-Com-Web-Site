@@ -39,6 +39,8 @@ function AddAllItems() {
   });
 }
 
+
+
 // Function to open modal with item details
 function openModal(item) {
   const modal = document.getElementById('modal');
@@ -78,3 +80,15 @@ function closeModal() {
   const modal = document.getElementById('modal');
   modal.classList.add('hidden');
 }
+
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+
+// Close modal on clicking close buttons or background
+closeModalBtn.addEventListener('click', closeModal);
+cancelBtn.addEventListener('click', closeModal);
+modal.addEventListener('click', (event) => {
+  if (event.target === modal) closeModal();
+});
+
+
