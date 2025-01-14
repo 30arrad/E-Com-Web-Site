@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOMO SAPIEN Pants</title>
+    <title>Navigation Bar</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -12,7 +12,7 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Logo and Branding -->
                 <div class="flex items-center">
-                    <a href="Home.html" class="text-2xl font-bold">HOMO SAPIEN</a>
+                    <a href="#" class="text-2xl font-bold">HOMO SAPIEN</a>
                 </div>
 
                 <!-- Menu Items -->
@@ -26,16 +26,18 @@
 
                 <!-- Right Section -->
                 <div class="flex items-center space-x-4">
-                    <!-- My Cart -->
+                    <!-- My Cart Dropdown -->
                     <div class="relative">
-                        <a href="Bag.html">
-                            <button id="myCartDropdownButton1" class="hover:text-gray-300 flex">
-                                <svg class="w-5 h-5 lg:me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
-                                </svg>
-                                    My Cart
-                                </button>
-                        </a>
+                        <button id="myCartDropdownButton1" class="hover:text-gray-300 flex">
+                        <svg class="w-5 h-5 lg:me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                        </svg>
+                            My Cart
+                        </button>
+                        <div id="myCartDropdown1" class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg hidden">
+                            <a href="Bag.html" class="block px-4 py-2 hover:bg-gray-200">View Cart</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Wishlist</a>
+                        </div>
                     </div>
 
                     <!-- Account Dropdown -->
@@ -47,7 +49,7 @@
                             Account
                         </button>
                         <div id="userDropdown1" class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg hidden">
-                            <a href="Profile.html" class="block px-4 py-2 hover:bg-gray-200">Profile</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Profile</a>
                             <a href="Order.html" class="block px-4 py-2 hover:bg-gray-200">Orders</a>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-200">Logout</a>
                         </div>
@@ -75,39 +77,36 @@
         </div>
     </nav>
 
-    <section class="text-center py-12">
-        <h2 class="text-3xl md:text-4xl font-bold">BEST PANTS COLLECTION</h2>
-        <p class="text-gray-500 mt-2 text-sm md:text-base">Discover quality styles and fashion trends for every occasion.</p>
-    </section>
 
-          
-<!-- Product Grid -->
-<section class="container mx-auto px-4 py-12">
-    <div id="items-Hoodies" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-    </div>
-
-          <!-- Modal -->
-  <div 
-  id="modal" 
-  class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
-  <div class="bg-white rounded-lg shadow-lg w-96">
-    <!-- Modal Header -->
-    <div class=" bg-gray-800 text-white flex justify-between items-center border-b px-4 py-2">
-      <h2 class="text-lg font-bold">Price Details</h2>
-      <button id="closeModalBtn" class="text-gray-600 hover:text-gray-900">×</button>
-    </div>
-
-    <!-- Modal Body -->
-    <div class="p-4 ">
-      <!-- Product Details -->
-      <div class="flex items-center space-x-4">
-        
-        
-      </div>
-      
-    </div>
-          
-</section>
+    <main class="container mx-auto px-4 py-8">
+        <!-- Profile Section -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-center space-x-4 mb-4">
+            <img
+              src="https://via.placeholder.com/100"
+              alt="Profile Picture"
+              class="w-24 h-24 rounded-full border border-gray-300"
+            />
+            <div>
+              <h2 class="text-2xl font-bold text-gray-800">Arrad Ahmed</h2>
+              <p class="text-gray-600">arradahmed30@gmail.com</p>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <p class="text-gray-700"><strong>Phone:</strong> 01891974298</p>
+            <p class="text-gray-700"><strong>Address:</strong> Matuail Wast Para, Dhaka, Bangladesh</p>
+            <p class="text-gray-700"><strong>Membership:</strong> Premium Member</p>
+          </div>
+        </section>
+    
+        <!-- Order History Section -->
+        <section class="bg-white p-6 rounded-lg shadow-md mt-8">
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Order History</h3>
+          <ul id="order-history" class="space-y-4">
+            <!-- Orders will be appended here dynamically -->
+          </ul>
+        </section>
+      </main>
 
 
       <!-- Footer -->
@@ -169,7 +168,63 @@
         });
     </script>
 
-    <script src="../database/DataPants.js"></script>
-    <script src="../JS/Index.js"></script>
+<script>
+    // app.js
+document.addEventListener("DOMContentLoaded", () => {
+  const orderHistory = document.getElementById("order-history");
+
+  // Sample data for order history
+  const orders = [
+    {
+      id: "12345",
+      date: "2023-12-01",
+      total: "$50.00",
+      status: "Delivered",
+    },
+    {
+      id: "67890",
+      date: "2023-11-15",
+      total: "$120.00",
+      status: "Shipped",
+    },
+    {
+      id: "11223",
+      date: "2023-10-25",
+      total: "$85.00",
+      status: "Cancelled",
+    },
+  ];
+
+  // Render orders
+  orders.forEach((order) => {
+    const li = document.createElement("li");
+    li.className =
+      "p-4 border border-gray-300 rounded flex justify-between items-center bg-gray-50";
+
+    li.innerHTML = `
+      <div>
+        <p><strong>Order ID:</strong> ${order.id}</p>
+        <p><strong>Date:</strong> ${order.date}</p>
+        <p><strong>Total:</strong> ${order.total}</p>
+      </div>
+      <span
+        class="text-sm ${
+          order.status === "Delivered"
+            ? "text-green-500"
+            : order.status === "Shipped"
+            ? "text-yellow-500"
+            : "text-red-500"
+        }"
+      >
+        ${order.status}
+      </span>
+    `;
+
+    orderHistory.appendChild(li);
+  });
+});
+
+  </script>
+</body>
 </body>
 </html>

@@ -15,11 +15,6 @@ function AddAllItems() {
         <p class="text-gray-500 mt-1">${item.item_Price}</p>
         <button 
           class="mt-4 w-full bg-gray-800 text-white py-2 rounded hover:bg-gray-700 viewDetails" 
-          >
-          Wishlist
-        </button>
-        <button 
-          class="mt-4 w-full bg-gray-800 text-white py-2 rounded hover:bg-gray-700 viewDetails" 
           data-id="${item.id}">
           View Cart
         </button>

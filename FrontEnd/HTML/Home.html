@@ -26,18 +26,16 @@
 
                 <!-- Right Section -->
                 <div class="flex items-center space-x-4">
-                    <!-- My Cart Dropdown -->
+                    <!-- My Cart -->
                     <div class="relative">
-                        <button id="myCartDropdownButton1" class="hover:text-gray-300 flex">
-                        <svg class="w-5 h-5 lg:me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
-                        </svg>
-                            My Cart
-                        </button>
-                        <div id="myCartDropdown1" class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg hidden">
-                            <a href="Bag.html" class="block px-4 py-2 hover:bg-gray-200">View Cart</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Wishlist</a>
-                        </div>
+                        <a href="Bag.html">
+                            <button id="myCartDropdownButton1" class="hover:text-gray-300 flex">
+                                <svg class="w-5 h-5 lg:me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                                </svg>
+                                    My Cart
+                                </button>
+                        </a>
                     </div>
 
                     <!-- Account Dropdown -->
@@ -49,7 +47,7 @@
                             Account
                         </button>
                         <div id="userDropdown1" class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg hidden">
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Profile</a>
+                            <a href="Profile.html" class="block px-4 py-2 hover:bg-gray-200">Profile</a>
                             <a href="Order.html" class="block px-4 py-2 hover:bg-gray-200">Orders</a>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-200">Logout</a>
                         </div>
@@ -212,3 +210,17 @@
     <script src="../JS/Index.js"></script>
 </body>
 </html>
+
+
+<!-- <div class="flex p-2 ">
+    <button 
+class="mt-4 w-20 bg-gray-800 text-white py-2 rounded hover:bg-gray-700 viewDetails " 
+>
+Wishlist
+</button>
+<button 
+class="mt-4 w-80 bg-gray-800 text-white py-2 rounded hover:bg-gray-700 viewDetails" 
+data-id="${item.id}">
+View Cart
+</button>
+</div> -->
