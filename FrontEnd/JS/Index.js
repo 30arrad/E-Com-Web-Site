@@ -1,4 +1,5 @@
 // Load all items into the grid
+
 AddAllItems();
 
 function AddAllItems() {
@@ -78,12 +79,42 @@ function closeModal() {
 
 const closeModalBtn = document.getElementById('closeModalBtn');
 
-
 // Close modal on clicking close buttons or background
 closeModalBtn.addEventListener('click', closeModal);
 cancelBtn.addEventListener('click', closeModal);
 modal.addEventListener('click', (event) => {
   if (event.target === modal) closeModal();
 });
+
+
+// Youtube Video
+
+// let bagItems;
+// onLoad();
+
+// function onLoad() {
+//   let bagItemsStr = localStorage.getItem('bagItems');
+//   bagItems = bagItemsStr ? JSON.parse(bagItemsStr) : [];
+//   AddAllItems();
+//   displayBagIcon();
+// }
+
+// function addToBag(itemId) {
+//   bagItems.push(itemId);
+//   localStorage.setItem('bagItems', JSON.stringify(bagItems));
+//   displayBagIcon();
+// }
+
+// function displayBagIcon() {
+//   let bagItemCountElement = document.getElementById('bag-item-count');
+//   if (bagItems.length > 0) {
+//     console.log('I am here');
+//     bagItemCountElement.style.visibility = 'visible';
+//     bagItemCountElement.innerText = bagItems.length;
+//   } else {
+//     bagItemCountElement.style.visibility = 'hidden';
+//   }
+// }
+
 
 
